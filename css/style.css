@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}/* Putem folosi 100% din browser folosing acest stil */
+
+html, body {
+    height: 100%;
+    background: #FFF;
+    text-align: center;
+    font: 1.15em/1 'Open Sans', sans-serif;
+    color: #FFF;
+}
+
+.wrapper {
+    background-color: #F5F5F5;
+    height: 100%;
+}
+
+#header {
+    background-color: #AFDED4;
+}
+
+.logo {
+    padding: 2%;
+}
+
+.logo-title {
+    padding: 2%;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2.dark {
+    color: #34405E;
+}
+
+h2 {
+    font: 300 2em/1 'Raleway', sans-serif;
+    color: #FFF;
+    padding: 2%;
+    position: relative;
+    top: 50%;
+    transform: translateY(10%);
+}
+
+.social {
+    list-style-type: none;
+}
+
+.social li {
+    display: inline;
+}
+
+.social img {
+    margin: 1%;
+    padding: 5%;
+    width:25%;
+    height:25%;
+}
+
+.logo-title {
+    font-size: 100px;
+}
+
+footer {
+    padding: 2%;
+}
+
+.row-footer {
+    background-color: #34495E;
+    border-top: 2px solid #F6931E;
+}
+
+.tableformat{
+    margin-left:auto; 
+    margin-right:auto;
+    border-collapse: collapse;
+    overflow-x:auto;
+    width: 100%;
+}
+
+
+.tableformat tr:nth-child(even) {
+    background-color: #AFDED4;
+}
+
+.tableformat td, .tableformat th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    color: black;
+}
+
+.tableformat th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: black;
+}
+
+
+.tableformat tr th:nth-child(1){
+    width: 400px;
+}
+
+.tableformat tr th:nth-child(2){
+    width: 400px;
+}
+.tableformat tr th:nth-child(3){
+    width: 400px;
+}
+
+.inputDiv {
+    border: 1px solid #ddd;
+    padding: 8px;
+    color: black;
+}
+
+.inputName {
+    padding-bottom: 3px;
+}
+
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+.inputSubmit {
+    padding-top: 5px;
+}
+
+.button {
+    background-color: #f44336; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+/*--- Media Queries ---*/
+@media all and (max-width: 900px) {
+    h2 {
+        font-size: 1.5em;
+    }
+    .social img {
+        width:20%;
+        height:20%;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .row {
+        display: flex;
+        margin: 0;
+    }
+    [class*="col-"]:last-child {
+        margin:0;
+    }
+    .col-1 {flex: 1;}
+    .col-2 {flex: 2;}
+    .col-3 {flex: 3;}
+    .col-4 {flex: 4;}
+    .col-5 {flex: 5;}
+    .col-6 {flex: 6;}
+    .col-7 {flex: 7;}
+    .col-8 {flex: 8;}
+    .col-9 {flex: 9;}
+    .col-10 {flex: 10;}
+    .col-11 {flex: 11;}
+    .col-12 {flex: 12;}
+}
+
+@media all and (max-width: 768px) {
+    .logo {
+        max-width: 150px;
+    }
+    h2 {
+        font-size: 1.25em;
+        padding: 3%;
+        transform: translateY(0%);
+    }
+    p {
+        font-size: .9em;
+    }
+    footer {
+        font-size: .9em;
+    }
+    .logo-title {
+        font-size: 50px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .social img {
+        width:17%;
+        height: 17%
+    }
+}

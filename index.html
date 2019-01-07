@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Train Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="row" id="header">
+            <div class="col-12">
+                <img class="logo" src="images/Train_Logo.png" />
+                <p class="logo-title"><i>Trainz</i></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <nav role="navigation" id="nav">
+                    <input class="trigger" type="checkbox" id="mainNavButton">
+                    <label for="mainNavButton" onclick>Menu</label>
+                    <ul>
+                        <li>
+                            <a onclick="showHomePage()">Home</a>
+                        </li>
+                        <li>
+                            <a onclick="showAboutPage()">About Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="home">
+            <div class="row">
+                <div class="col-12" style="padding: 2%;">
+                    <h2 class="dark">Welcome To Trainz!</h2>
+                </div>
+            </div>
+
+            <div class="row" style="background-color: #F6931E">
+                <div class="col-11">
+                    <h2>Get ready for the best train website!</h2>
+                </div>
+                <div class="col-3">
+                    <img src="images/Train_Icon.png">
+                </div>
+            </div>
+            <div class="row" style="background-color: #1ABC9C">
+                <div class="col-11">
+                    <h2>Our trains travel in the whole world.</h2>
+                </div>
+                <div class="col-3">
+                    <img src="images/planet.png">
+                </div>
+            </div>
+            <div class="row" style="background-color: #E5EF3F">
+                <div class="col-11">
+                    <h2 class="dark">We're happy that you travel with us.</h2>
+                </div>
+                <div class="col-3">
+                    <img src="images/Pikachu_(Happy).png">
+                </div>
+            </div>
+            <div class="row" style="background-color: rgb(135, 171, 207)">
+                <div class="col-11">
+                    <h2>We always try to arrive on time!</h2>
+                </div>
+                <div class="col-3">
+                    <img src="images/alarm-clock.png">
+                </div>
+            </div>
+            <div class="row" style="background-color: #6a33eb">
+                <div class="col-11">
+                    <h2>So get ready for the trip!</h2>
+                </div>
+                <div class="col-3">
+                    <img src="images/running_man.png">
+                </div>
+            </div>
+            <div class="row" style="background-color: #4cccec">
+                <div class="col-12">
+                    <img src="images/Hyperbolic_Train.png">
+                </div>
+            </div>
+            <div class="row" style="background-color:#4cccec">
+                <div class="col-12">
+                    <h2>Follow Us!</h2>
+                </div>
+            </div>
+            <div class="row" style="background-color: #4cccec">
+                <div class="col-12">
+                    <ul class="social">
+                        <li><a href="#"><img src="images/Facebook-icon.png"></a></li>
+                        <li><a href="#"><img src="images/twitter.png"></a></li>
+                        <li><a href="#"><img src="images/youtube.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div class="row">
+                <div class="col-12" style="padding: 2%;">
+                    <h2 class="dark">About Trainz</h2>
+                </div>
+            </div>
+            <div class="row" style="background-color: #F6931E; overflow-x:auto;">
+                <table id="trains" class="tableformat">
+                    <tr>
+                        <th>Name</th>
+                        <th>Speed</th>
+                        <th>Weigth</th>
+                        <th>Delete</th>
+                    </tr>
+                </table>
+            </div>
+        <div class="inputDiv" style="background-color: rgb(76, 95, 202)">
+            <div class="row" style="background-color: rgb(76, 95, 202)">
+                <p class="inputName">Name</p>
+            </div>
+            <div class="row" style="background-color: rgb(76, 95, 202)">
+                <input type="text" id="name" value="name">
+            </div>
+            <div class="row" style="background-color: rgb(76, 95, 202)">
+                <p class="inputName">Speed</p>
+            </div>
+            <div class="row" style="background-color: rgb(76, 95, 202)">
+                <input type="text" id="speed" value="speed">
+            </div>
+            <div class="row" style="background-color: rgb(76, 95, 202)">
+                <p class="inputName">Weigth</p>
+            </div>
+            <div class="row center-block" style="background-color: rgb(76, 95, 202)">
+                <input type="text" id="weigth" value="weigth">
+        </div>
+            <div class="row" style="background-color: rgb(76, 95, 202)">
+                <div class="inputSubmit col-1">
+                    <input type="submit" onclick="saveTrain()">
+                </div>
+                <div class="col-11"></div>
+            </div>
+        </div>
+        </div>
+        <div class="row row-footer">
+            <div class="col-12">
+                <footer>&copy; Trainz</footer>
+            </div>
+        </div>
+    </div>
+    <!--End Wrapper-->
+    <script src="script/script.js"></script>
+</body>
+
+</html>
