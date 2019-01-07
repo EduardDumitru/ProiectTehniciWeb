@@ -1,0 +1,10 @@
+{
+  "trains": [
+    {
+      "name": "a",
+      "speed": "b",
+      "weigth": "c",
+      "id": 1
+    }
+  ]
+}

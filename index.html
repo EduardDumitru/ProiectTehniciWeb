@@ -108,12 +108,7 @@
             </div>
             <div class="row" style="background-color: #F6931E; overflow-x:auto;">
                 <table id="trains" class="tableformat">
-                    <tr>
-                        <th>Name</th>
-                        <th>Speed</th>
-                        <th>Weigth</th>
-                        <th>Delete</th>
-                    </tr>
+
                 </table>
             </div>
         <div class="inputDiv" style="background-color: rgb(76, 95, 202)">
@@ -121,23 +116,26 @@
                 <p class="inputName">Name</p>
             </div>
             <div class="row" style="background-color: rgb(76, 95, 202)">
-                <input type="text" id="name" value="name">
+                <input type="text" id="inputName" placeholder="name">
             </div>
             <div class="row" style="background-color: rgb(76, 95, 202)">
                 <p class="inputName">Speed</p>
             </div>
             <div class="row" style="background-color: rgb(76, 95, 202)">
-                <input type="text" id="speed" value="speed">
+                <input type="text" id="inputSpeed" placeholder="speed">
             </div>
             <div class="row" style="background-color: rgb(76, 95, 202)">
                 <p class="inputName">Weigth</p>
             </div>
             <div class="row center-block" style="background-color: rgb(76, 95, 202)">
-                <input type="text" id="weigth" value="weigth">
+                <input type="text" id="inputWeigth" placeholder="weigth">
         </div>
             <div class="row" style="background-color: rgb(76, 95, 202)">
                 <div class="inputSubmit col-1">
-                    <input type="submit" onclick="saveTrain()">
+                    <input type="submit" id="addButton" onclick="postTrain()" value="Add">
+                </div>
+                <div class="inputSubmit col-1">
+                    <input type="submit" id="updateButton" disabled="disabled" value="Update">
                 </div>
                 <div class="col-11"></div>
             </div>
